@@ -1,6 +1,6 @@
 #[清除浮动](http://www.iyunlu.com/view/css-xhtml/55.html)
 
-#
+#移动端响应式
     1.屏幕尺寸
         屏幕对角线尺寸 1英尺 = 2.54厘米
     2.物理像素
