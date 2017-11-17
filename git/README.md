@@ -1,6 +1,8 @@
 ##参考
 -[gitbook](https://git-scm.com/book/zh/v2)
 
+# 起步
+	
 # git 是分布式版本控制系统
 # git 的诞生
  2005 linux 开发了 git , 2008年 github 上线
@@ -15,4 +17,4 @@
 		然后到 C:\Users\XXX\.ssh copy id_rsa.pub,
 		最后在 github -》Account -》 settings SSH Keys
 	3. 在 github 创建 项目 然后 git clone 
-	4. 
+	4. git add.
