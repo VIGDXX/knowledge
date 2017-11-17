@@ -9,7 +9,9 @@
 3.屏幕像素密度(ppi)
 每英寸显示的像素点的数量，根据ppi转换成相应 X倍屏幕
 4.viewport
+```html
 <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.max">
+```
 大部分移动浏览器 默认视口宽度 980px，不是理想视口，需要转化，视口宽度=设备宽度
 结合以上概念，做移动端响应式可以使用 rem，参考代码
 `
@@ -25,8 +27,8 @@
 图片响应式
 
 ## 参考资料
-[深入了解viewport和px](http://tgideas.qq.com/webplat/info/news_version3/804/7104/7106/m5723/201509/376281.shtml).
-[移动web资源整理](http://www.cnblogs.com/PeunZhang/p/3407453.html#meta_6).
-[rem布局自适应布局方案总结](https://github.com/yunzhijia/front-end/blob/master/rem%E5%B8%83%E5%B1%80%E8%87%AA%E9%80%82%E5%BA%94%E5%B8%83%E5%B1%80%E6%96%B9%E6%A1%88%E6%80%BB%E7%BB%93.md).
-[viewport 剖析 --ppk](https://www.w3cplus.com/css/viewports.html).
-[使用Flexible实现手淘H5页面的终端适配](https://github.com/amfe/article/issues/17).
+1.[深入了解viewport和px](http://tgideas.qq.com/webplat/info/news_version3/804/7104/7106/m5723/201509/376281.shtml).
+2.[移动web资源整理](http://www.cnblogs.com/PeunZhang/p/3407453.html#meta_6).
+3.[rem布局自适应布局方案总结](https://github.com/yunzhijia/front-end/blob/master/rem%E5%B8%83%E5%B1%80%E8%87%AA%E9%80%82%E5%BA%94%E5%B8%83%E5%B1%80%E6%96%B9%E6%A1%88%E6%80%BB%E7%BB%93.md).
+4.[viewport 剖析 --ppk](https://www.w3cplus.com/css/viewports.html).
+5.[使用Flexible实现手淘H5页面的终端适配](https://github.com/amfe/article/issues/17).
