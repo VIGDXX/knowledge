@@ -1,5 +1,5 @@
 # 清除浮动
-    ## 参考资料
+## 参考资料
     [清除浮动](http://www.iyunlu.com/view/css-xhtml/55.html).
 # 移动端响应式
 1.屏幕尺寸
