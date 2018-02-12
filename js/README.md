@@ -22,4 +22,4 @@ function ajax(option) {
 }
 ```
 ##参考资料
-[你真的会使用XMLHttpRequest吗？]([https://segmentfault.com/a/1190000004322487#articleHeader0])
+1.[你真的会使用XMLHttpRequest吗？](https://segmentfault.com/a/1190000004322487#articleHeader0).
