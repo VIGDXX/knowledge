@@ -1,8 +1,8 @@
-# encodeURIComponent and decodeURIComponent
+# 1 encodeURIComponent and decodeURIComponent
 
-# hash and history
+# 2 hash and history
 	hash mode 
-# ajax
+# 3 ajax
 ```
 function ajax(option) {
 	var xhr = XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject("Microsoft.XMLHTTP")
