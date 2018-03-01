@@ -32,3 +32,17 @@
 3. [rem布局自适应布局方案总结](https://github.com/yunzhijia/front-end/blob/master/rem%E5%B8%83%E5%B1%80%E8%87%AA%E9%80%82%E5%BA%94%E5%B8%83%E5%B1%80%E6%96%B9%E6%A1%88%E6%80%BB%E7%BB%93.md).
 4. [viewport 剖析 --ppk](https://www.w3cplus.com/css/viewports.html).
 5. [使用Flexible实现手淘H5页面的终端适配](https://github.com/amfe/article/issues/17).
+
+# 3. flex 布局
+    display:flex 容器的6个属性
+    1）flex-direction: row|row-reverse|colum|colum-reverse 项目在主轴排列的方向
+    2）flex-wrap: nowrap|wrap|wrap-reverse 项目是否换行
+    3）flex-flow: <flex-direction> || <flex-wrap>;
+    4）justify-content: flex-start|flex-end|center|space-bewtten|space-around 项目在主轴的对齐方式
+    5）align-items:flex-start|flex-end|center|baseline|stretch 项目在交叉轴的对齐方式
+    6）align-content：flex-start | flex-end | center | space-between | space-around | stretch; 多根轴线的对齐方式
+
+    项目的属性
+    1）flex
+    2）align-self align-self属性允许单个项目有与其他项目不一样的对齐方式，可覆盖align-items属性。默认值为auto，表示继承父元素的align-items属性
+
