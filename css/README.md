@@ -84,7 +84,7 @@
 
 //当一个static元素在top/left使用负边距时，它把元素向这个特定的方向拉
 //但是当你将负边距设置为相对bottom/right时，它并不会把元素向下或右拉，相反，它会把后面的元素往里面拉，从而覆盖自己。
-[](https://segmentfault.com/a/1190000003942591)
+[负边距详解](https://segmentfault.com/a/1190000003942591).
 # 5. BCF: Block Formatting Contexts (块级格式化上下文)
     具有 BFC 特性的元素可以看作是隔离了的独立容器，容器里面的元素不会在布局上影响到外面的元素
     触发 BFC 特性:
@@ -93,4 +93,4 @@
         *绝对定位元素：position (absolute、fixed)
         *display 为 inline-block、table-cells、flex
         *overflow 除了 visible 以外的值 (hidden、auto、scroll)
-    [10 分钟理解 BFC 原理](https://zhuanlan.zhihu.com/p/25321647)
+    [10 分钟理解 BFC 原理](https://zhuanlan.zhihu.com/p/25321647).
