@@ -45,4 +45,52 @@
     项目的属性
     1）flex
     2）align-self align-self属性允许单个项目有与其他项目不一样的对齐方式，可覆盖align-items属性。默认值为auto，表示继承父元素的align-items属性
+# 4. 一侧固定，一侧自适应;三列
+## 4.1 一侧固定，一侧自适应
+```
+<div>
+    <div class="sidebar"><p>sidebar</p></div>
+    <div class="content"><p>content</p></div>
+</div>
+```
+```
+.sidebar {
+    float:left;
+    width:200px;
+}
+.content {
+    margin-left: 200px;
+}
+// or
+.sidebar {
+    float:left;
+    width:200px;
+    margin-right: -200px;
+}
+.content {
+    float:left;
+    width:100%;
+}
+.content p{
+    margin-left: 200px;
+}
+```
 
+## 4.2 三列
+ *绝对定位法
+ *自身浮动法
+ *圣杯布局 (负边距) center,left,right 都左浮动，left 的margin-left:100% ;right 的 margin-left right的负宽度，在设置center 子盒子的margincd
+    
+
+//当一个static元素在top/left使用负边距时，它把元素向这个特定的方向拉
+//但是当你将负边距设置为相对bottom/right时，它并不会把元素向下或右拉，相反，它会把后面的元素往里面拉，从而覆盖自己。
+[](https://segmentfault.com/a/1190000003942591)
+# 5. BCF: Block Formatting Contexts (块级格式化上下文)
+    具有 BFC 特性的元素可以看作是隔离了的独立容器，容器里面的元素不会在布局上影响到外面的元素
+    触发 BFC 特性:
+    body 根元素
+        *浮动元素：float 除 none 以外的值
+        *绝对定位元素：position (absolute、fixed)
+        *display 为 inline-block、table-cells、flex
+        *overflow 除了 visible 以外的值 (hidden、auto、scroll)
+    [10 分钟理解 BFC 原理](https://zhuanlan.zhihu.com/p/25321647)
