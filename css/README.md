@@ -1,6 +1,6 @@
 # 1. 清除浮动
 ## 参考资料
-[清除浮动](http://www.iyunlu.com/view/css-xhtml/55.html).
+1. [清除浮动](http://www.iyunlu.com/view/css-xhtml/55.html).
 # 2. 移动端响应式
 1. 屏幕尺寸
 屏幕对角线尺寸 1英尺 = 2.54厘米
@@ -53,7 +53,7 @@
 
 //当一个static元素在top/left使用负边距时，它把元素向这个特定的方向拉
 //但是当你将负边距设置为相对bottom/right时，它并不会把元素向下或右拉，相反，它会把后面的元素往里面拉，从而覆盖自己。
-
+## 参考资料
 1. [我熟知的三种三栏网页宽度自适应布局方法](http://www.zhangxinxu.com/wordpress/2009/11/%E6%88%91%E7%86%9F%E7%9F%A5%E7%9A%84%E4%B8%89%E7%A7%8D%E4%B8%89%E6%A0%8F%E7%BD%91%E9%A1%B5%E5%AE%BD%E5%BA%A6%E8%87%AA%E9%80%82%E5%BA%94%E5%B8%83%E5%B1%80%E6%96%B9%E6%B3%95/#m1).
 
 2. [负边距详解](https://segmentfault.com/a/1190000003942591).
@@ -66,4 +66,5 @@
 * 绝对定位元素：position (absolute、fixed)
 * display 为 inline-block、table-cells、flex
 * overflow 除了 visible 以外的值 (hidden、auto、scroll)
-[10 分钟理解 BFC 原理](https://zhuanlan.zhihu.com/p/25321647).
+## 参考资料
+1. [10 分钟理解 BFC 原理](https://zhuanlan.zhihu.com/p/25321647).
