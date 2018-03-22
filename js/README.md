@@ -36,7 +36,8 @@ function isArray(val) {
 1. 递归
 ```
 function deepCopy(data) {
-	if(typeof data !== 'object') {
+	var dataType = Object.prototype.toString.call(data)
+	if( dataType !== '[object Array]' && dataType !=='[object Object]') {
 		return data
 	}
 
