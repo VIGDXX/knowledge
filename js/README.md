@@ -32,3 +32,23 @@ function isArray(val) {
 }
 
 ```
+# 5 深度克隆
+1. 递归
+```
+function deepCopy(data) {
+	if(typeof data !== 'object') {
+		return data
+	}
+
+	var obj = Array.isArray(data) ? [] : {}
+	for(var key in data) {
+		obj[key] = deepCopy(data[key])
+	}
+	return obj
+}
+```
+2. JSON
+```
+JSON.parse(JSON.stringify(data))
+//丢失函数和原型链
+```
