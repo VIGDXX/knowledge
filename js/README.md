@@ -37,15 +37,21 @@ function isArray(val) {
 ```
 function deepCopy(data) {
 	var dataType = Object.prototype.toString.call(data)
-	if( dataType !== '[object Array]' && dataType !=='[object Object]') {
+	if( dataType === '[object Array]'  ) {
+		var arr = []
+		data.forEach(function(item) {
+			arr.push(item)
+		})
+		return arr
+	} else if(dataType ==='[object Object]'){
+		var obj = {}
+		for(var key in data) {
+			obj[key] = deepCopy(data[key])
+		}
+		return obj
+	} else {
 		return data
-	}
-
-	var obj = Array.isArray(data) ? [] : {}
-	for(var key in data) {
-		obj[key] = deepCopy(data[key])
-	}
-	return obj
+	}	
 }
 ```
 2. JSON
