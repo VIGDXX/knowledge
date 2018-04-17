@@ -39,8 +39,8 @@ function deepCopy(data) {
 	var dataType = Object.prototype.toString.call(data)
 	if( dataType === '[object Array]'  ) {
 		var arr = []
-		data.forEach(function(item) {
-			arr.push(item)
+		data.forEach(function(item,index) {
+			arr[indxe] = deepCopy(item)
 		})
 		return arr
 	} else if(dataType ==='[object Object]'){
@@ -53,6 +53,7 @@ function deepCopy(data) {
 		return data
 	}	
 }
+// for in 不要循环数组，如果扩展 Array.prototype GG
 ```
 2. JSON
 ```
