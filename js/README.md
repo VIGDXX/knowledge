@@ -40,7 +40,7 @@ function deepCopy(data) {
 	if( dataType === '[object Array]'  ) {
 		var arr = []
 		data.forEach(function(item,index) {
-			arr[indxe] = deepCopy(item)
+			arr[index] = deepCopy(item)
 		})
 		return arr
 	} else if(dataType ==='[object Object]'){
