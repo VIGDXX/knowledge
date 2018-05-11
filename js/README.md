@@ -60,3 +60,61 @@ function deepCopy(data) {
 JSON.parse(JSON.stringify(data))
 //丢失函数和原型链
 ```
+3. 考虑到循环引用，从 vuex copy过来
+[vuex deepcopy](https://github.com/vuejs/vuex/blob/dev/src/util.js#L30)
+```
+/**
+ * Get the first item that pass the test
+ * by second argument function
+ *
+ * @param {Array} list
+ * @param {Function} f
+ * @return {*}
+ */
+export function find (list, f) {
+  const { length } = list
+  let index = 0
+  let value
+  while (++index < length) {
+    value = list[index]
+    if (f(value, index, list)) {
+      return value
+    }
+  }
+}
+/**
+ * Deep copy the given object considering circular structure.
+ * This function caches all nested objects and its copies.
+ * If it detects circular structure, use cached copy to avoid infinite loop.
+ *
+ * @param {*} obj
+ * @param {Array<Object>} cache
+ * @return {*}
+ */
+export function deepCopy (obj, cache = []) {
+  // just return if obj is immutable value
+  if (obj === null || typeof obj !== 'object') {
+    return obj
+  }
+
+  // if obj is hit, it is in circular structure
+  const hit = find(cache, c => c.original === obj)
+  if (hit) {
+    return hit.copy
+  }
+
+  const copy = Array.isArray(obj) ? [] : {}
+  // put the copy into cache at first
+  // because we want to refer it in recursive deepCopy
+  cache.push({
+    original: obj,
+    copy
+  })
+
+  Object.keys(obj).forEach(key => {
+    copy[key] = deepCopy(obj[key], cache)
+  })
+
+  return copy
+}
+```
